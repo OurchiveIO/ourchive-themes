@@ -1,0 +1,83 @@
+// 1. Your custom variables and variable overwrites.
+$global-color:                                   #666 !default;
+$global-emphasis-color:                          #333 !default;
+$global-muted-color:                             #07393C !default;
+
+$global-link-color:                              #07393C !default;
+$global-link-hover-color:                        #70163C !default;
+
+$global-inverse-color:                           #F9F6F1 !default;
+$global-primary-background:                      #08AF80 !default;
+
+$global-background:                              #F9F6F1 !default;
+
+$global-muted-background:                        #F9F6F1 !default;
+$global-secondary-background:                    #07393C !default;
+
+$global-success-background:                      #07393C !default;
+$global-warning-background:                      #70163C !default;
+$global-danger-background:                       #DE6B48 !default;
+
+// 2. Import default variables and available mixins.
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+@mixin hook-card() { color: #000; }
+
+// 4. Import UIkit.
+@import "uikit/src/scss/uikit-theme.scss";
+
+.ourchive-navbar {
+  background-color: $global-primary-background;
+}
+.uk-navbar-nav > li > a {
+  color: #0D4016;
+}
+.uk-text-meta {
+  color: #0D4016;
+}
+.uk-navbar-nav > li > a:hover {
+  background-color: $global-background;
+  color: #0D4016;
+}
+.uk-navbar-nav > li > a {
+	padding: .5em;
+}
+.uk-navbar-nav > .uk-active {
+  font-weight: bold;
+}
+.uk-card-header {
+  background-color: $global-primary-background;
+}
+.uk-card-header a {
+  text-decoration: none;
+  color: #0D4016;
+}
+.uk-card-header a:hover {
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.rating-star > svg > polygon {
+  fill: gold;
+}
+.rating-star > svg {
+  color: gold;
+}
+
+@media (min-width: $breakpoint-medium) {
+	.uk-navbar-nav {
+	    gap: 5px; 
+	}
+}
+
+.ourchive-tag-entry {
+	border-style: dashed;
+	border-width: 1px;
+	border-color: $global-muted-color
+}
