@@ -1,0 +1,114 @@
+// 
+// Colors
+//
+
+$global-color:                                   #F9F6F1 !default;
+$global-emphasis-color:                          #FFF !default;
+$global-muted-color:                             #EDE4D4 !default;
+
+$global-link-color:                              #EDE4D4 !default;
+$global-link-hover-color:                        #70163C !default;
+
+$global-inverse-color:                           #FFF !default;
+$global-primary-background:                      #55112D !default;
+
+$global-background:                              #042325 !default;
+
+$global-muted-background:                        #042325 !default;
+$global-secondary-background:                    #AF4308 !default;
+
+$global-success-background:                      #EDE4D4 !default;
+$global-warning-background:                      #70163C !default;
+$global-danger-background:                       #70163C !default;
+
+//
+// Box-Shadows
+//
+
+$global-small-box-shadow:                        0 2px 8px rgba(249,246,241,.08) !default;
+$global-medium-box-shadow:                       0 5px 15px rgba(249,246,241,.08) !default;
+$global-large-box-shadow:                        0 14px 25px rgba(249,246,241,.16) !default;
+$global-xlarge-box-shadow:                       0 28px 50px rgba(249,246,241,.16) !default;
+
+//
+// Typography
+//
+
+// Source: https://github.com/indestructible-type/Jost
+@import "fonts/jost.css";
+
+$global-font-family:                             "Jost", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$global-font-size:                               16px !default;
+$global-line-height:                             1.5 !default;      // 24px
+
+$global-2xlarge-font-size:                       2.625rem !default; // 42px
+$global-xlarge-font-size:                        2rem !default;     // 32px
+$global-large-font-size:                         1.5rem !default;   // 24px
+$global-medium-font-size:                        1.25rem !default;  // 20px
+$global-small-font-size:                         0.975rem !default; // 14px
+
+// 2. Import default variables and available mixins.
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+@mixin hook-card() { color: #000; }
+
+// 4. Import UIkit.
+@import "uikit/src/scss/uikit-theme.scss";
+
+em {
+  color: $global-color !important;
+}
+
+.ourchive-navbar {
+  background-color: $global-primary-background;
+}
+
+.uk-navbar-nav > li > a:hover {
+  background-color: $global-background;
+}
+.uk-navbar-nav > li > a {
+	padding: .5em;
+}
+.uk-navbar-nav > .uk-active {
+  font-weight: bold;
+}
+.uk-card-header {
+  background-color: $global-primary-background;
+}
+.uk-card-header a {
+  text-decoration: none;
+}
+.uk-card-header a:hover {
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.rating-star > svg > polygon {
+  fill: gold;
+}
+.rating-star > svg {
+  color: gold;
+}
+
+@media (min-width: $breakpoint-medium) {
+	.uk-navbar-nav {
+	    gap: 5px; 
+	}
+}
+
+.ourchive-tag-entry {
+	border-style: dashed;
+	border-width: 1px;
+	border-color: $global-muted-color
+}
+
+.custom-icon {
+  height: 1em;
+  width: 1em;
+}

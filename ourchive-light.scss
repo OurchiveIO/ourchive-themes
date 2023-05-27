@@ -1,4 +1,7 @@
-// 1. Your custom variables and variable overwrites.
+// 
+// Colors
+//
+
 $global-color:                                   #666 !default;
 $global-emphasis-color:                          #333 !default;
 $global-muted-color:                             #07393C !default;
@@ -18,6 +21,23 @@ $global-success-background:                      #07393C !default;
 $global-warning-background:                      #70163C !default;
 $global-danger-background:                       #DE6B48 !default;
 
+//
+// Typography
+//
+
+// Source: https://github.com/indestructible-type/Jost
+@import "fonts/jost.css";
+
+$global-font-family:                             "Jost", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$global-font-size:                               16px !default;
+$global-line-height:                             1.5 !default;      // 24px
+
+$global-2xlarge-font-size:                       2.625rem !default; // 42px
+$global-xlarge-font-size:                        2rem !default;     // 32px
+$global-large-font-size:                         1.5rem !default;   // 24px
+$global-medium-font-size:                        1.25rem !default;  // 20px
+$global-small-font-size:                         0.975rem !default; // 14px
+
 // 2. Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";
 @import "uikit/src/scss/mixins-theme.scss";
@@ -27,6 +47,10 @@ $global-danger-background:                       #DE6B48 !default;
 
 // 4. Import UIkit.
 @import "uikit/src/scss/uikit-theme.scss";
+
+em {
+  color: $global-color !important;
+}
 
 .ourchive-navbar {
   background-color: $global-primary-background;
@@ -80,4 +104,9 @@ a:hover {
 	border-style: dashed;
 	border-width: 1px;
 	border-color: $global-muted-color
+}
+
+.custom-icon {
+  height: 1em;
+  width: 1em;
 }
