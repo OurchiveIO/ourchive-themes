@@ -10016,6 +10016,9 @@ em {
 .ourchive-navbar {
   background-color: #55112D; }
 
+.uk-alert-warning {
+  color: #042325 !important; }
+
 .uk-navbar-nav > li > a:hover {
   background-color: #042325; }
 

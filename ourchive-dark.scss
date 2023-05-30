@@ -66,6 +66,10 @@ em {
   background-color: $global-primary-background;
 }
 
+.uk-alert-warning {
+  color: $global-background !important;
+}
+
 .uk-navbar-nav > li > a:hover {
   background-color: $global-background;
 }
