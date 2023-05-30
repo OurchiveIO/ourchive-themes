@@ -19,8 +19,10 @@ $global-muted-background:                        #042325 !default;
 $global-secondary-background:                    #F89762 !default;
 
 $global-success-background:                      #EDE4D4 !default;
-$global-warning-background:                      #70163C !default;
-$global-danger-background:                       #70163C !default;
+$global-warning-background:                      #EA590B !default;
+$global-danger-background:                       #EA590B !default;
+
+$notification-message-primary-color:             $global-color !default;
 
 //
 // Box-Shadows
