@@ -2,24 +2,31 @@
 // Colors
 //
 
+$ourchive-orange:                                #FF9F1C !default;
+$ourchive-orange-light:                          #FFBF69 !default;
+$ourchive-light:                                 #F5F5F5 !default;
+$ourchive-teal:                                  #2EC4B6 !default;
+$ourchive-teal-light:                            #CBF3F0 !default;
+$ourchive-dark-green:                            #0D4016 !default;
+
 $global-color:                                   #666 !default;
 $global-emphasis-color:                          #333 !default;
-$global-muted-color:                             #07393C !default;
+$global-muted-color:                             $global-color !default;
 
-$global-link-color:                              #07393C !default;
-$global-link-hover-color:                        #70163C !default;
+$global-link-color:                              $ourchive-orange !default;
+$global-link-hover-color:                        $ourchive-teal !default;
 
-$global-inverse-color:                           #F9F6F1 !default;
-$global-primary-background:                      #08AF80 !default;
+$global-inverse-color:                           $ourchive-light !default;
+$global-primary-background:                      $ourchive-teal !default;
 
-$global-background:                              #F9F6F1 !default;
+$global-background:                              $ourchive-light !default;
 
-$global-muted-background:                        #F9F6F1 !default;
-$global-secondary-background:                    #07393C !default;
+$global-muted-background:                        $ourchive-light !default;
+$global-secondary-background:                    $global-color !default;
 
-$global-success-background:                      #07393C !default;
-$global-warning-background:                      #70163C !default;
-$global-danger-background:                       #DE6B48 !default;
+$global-success-background:                      $global-color !default;
+$global-warning-background:                      #CC3300 !default;
+$global-danger-background:                       #CC3300 !default;
 
 //
 // Typography
@@ -29,13 +36,13 @@ $global-danger-background:                       #DE6B48 !default;
 @import "fonts/jost.css";
 
 $global-font-family:                             "Jost", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$global-font-size:                               16px !default;
+$global-font-size:                               18px !default;
 $global-line-height:                             1.5 !default;      // 24px
 
 $global-2xlarge-font-size:                       2.625rem !default; // 42px
 $global-xlarge-font-size:                        2rem !default;     // 32px
 $global-large-font-size:                         1.5rem !default;   // 24px
-$global-medium-font-size:                        1.25rem !default;  // 20px
+$global-medium-font-size:                        1.33rem !default;  // 20px
 $global-small-font-size:                         0.975rem !default; // 14px
 
 // 2. Import default variables and available mixins.
@@ -48,50 +55,40 @@ $global-small-font-size:                         0.975rem !default; // 14px
 // 4. Import UIkit.
 @import "uikit/src/scss/uikit-theme.scss";
 
-em {
-  color: $global-color !important;
-}
+// 5. Import Ourchive common.
+@import "ourchive-common.scss";
 
 .ourchive-navbar {
   background-color: $global-primary-background;
 }
+
 .uk-navbar-nav > li > a {
-  color: #0D4016;
+  color: $ourchive-dark-green;
 }
 .uk-text-meta {
-  color: #0D4016;
+  color: $ourchive-dark-green;
 }
 .uk-navbar-nav > li > a:hover {
-  background-color: $global-background;
-  color: #0D4016;
+  color: $ourchive-dark-green;
 }
-.uk-navbar-nav > li > a {
-	padding: .5em;
-}
-.uk-navbar-nav > .uk-active {
-  font-weight: bold;
-}
+
 .uk-card-header {
   background-color: $global-primary-background;
 }
+
 .uk-card-header a {
-  text-decoration: none;
-  color: #0D4016;
+  color: $ourchive-dark-green;
 }
-.uk-card-header a:hover {
-  font-weight: bold;
-}
-a {
-  text-decoration: none;
+
+.content-block-parent a {
+  font-weight: 500;
 }
 a:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
-.rating-star > svg > polygon {
-  fill: gold;
-}
-.rating-star > svg {
-  color: gold;
+
+.ourchive-li-flyover > dl > dt {
+  color: $global-inverse-color !important;
 }
 
 @media (min-width: $breakpoint-medium) {
@@ -100,77 +97,10 @@ a:hover {
 	}
 }
 
-.ourchive-tag-entry {
-	border-style: dashed;
-	border-width: 1px;
-	border-color: $global-muted-color
-}
-
-.custom-icon {
-  height: 1em;
-  width: 1em;
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
 input:checked + .slider {
   background-color: $global-primary-background;
 }
 
 input:focus + .slider {
   box-shadow: 0 0 1px $global-primary-background;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-.ourchive-comment {
-  white-space: pre-wrap;
 }
