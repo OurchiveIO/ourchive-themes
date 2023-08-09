@@ -153,3 +153,11 @@ input:checked + .slider:before {
 .ourchive-comment {
   white-space: pre-wrap;
 }
+
+.ourchive-autocomplete-parent {
+  overflow: auto;
+}
+
+.ourchive-autocomplete-child {
+  overflow-y: auto;
+}
