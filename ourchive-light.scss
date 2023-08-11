@@ -2,19 +2,20 @@
 // Colors
 //
 
-$ourchive-orange:                                #FF9F1C !default;
+$ourchive-orange:                                #FF990A !default;
 $ourchive-orange-light:                          #FFBF69 !default;
 $ourchive-light:                                 #F5F5F5 !default;
 $ourchive-teal:                                  #2EC4B6 !default;
 $ourchive-teal-light:                            #CBF3F0 !default;
 $ourchive-dark-green:                            #0D4016 !default;
+$ourchive-purple:                                #70163C !default;
 
 $global-color:                                   #666 !default;
 $global-emphasis-color:                          #333 !default;
 $global-muted-color:                             $global-color !default;
 
-$global-link-color:                              $ourchive-orange !default;
-$global-link-hover-color:                        $ourchive-teal !default;
+$global-link-color:                              $ourchive-purple !default;
+$global-link-hover-color:                        $ourchive-orange !default;
 
 $global-inverse-color:                           $ourchive-light !default;
 $global-primary-background:                      $ourchive-teal !default;
@@ -107,4 +108,8 @@ input:focus + .slider {
 
 .ourchive-nav-search {
   color: $ourchive-dark-green !important;
+}
+
+.ourchive-autocomplete-div {
+  background-color: $ourchive-light !important;
 }
