@@ -161,3 +161,21 @@ input:checked + .slider:before {
 .ourchive-autocomplete-child {
   overflow-y: auto;
 }
+
+.ourchive-collection-sm-desc {
+  width: 100%;
+  /* this code clamps based on specified lines */
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  display: -webkit-box;
+}
+
+.ourchive-collection-lg-desc {
+  width: 100%;
+  /* this code clamps based on specified lines */
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10;
+  display: -webkit-box;
+}

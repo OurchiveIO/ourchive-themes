@@ -3,8 +3,8 @@
 //
 
 $ourchive-orange:                                #FF9F1C !default;
-$ourchive-dark:                                  #0B0C10 !default;
-$ourchive-light:                                 #EBEBEB !default;
+$ourchive-dark:                                  #171E26 !default;
+$ourchive-light:                                 #D6D6D6 !default;
 $ourchive-teal:                                  #45A29E !default;
 $ourchive-grey:                                  #C5C6C7 !default;
 $ourchive-navy:                                  #1F2833 !default;
@@ -13,8 +13,8 @@ $global-color:                                   $ourchive-light !default;
 $global-emphasis-color:                          $ourchive-light !default;
 $global-muted-color:                             $ourchive-light !default;
 
-$global-link-color:                              $ourchive-light !default;
-$global-link-hover-color:                        $ourchive-orange !default;
+$global-link-color:                              $ourchive-orange !default;
+$global-link-hover-color:                        $ourchive-light !default;
 $text-secondary-color:                           $ourchive-orange !default;
 
 $global-inverse-color:                           $ourchive-light !default;
@@ -89,4 +89,9 @@ input:checked + .slider {
 
 input:focus + .slider {
   box-shadow: 0 0 1px $global-secondary-background;
+}
+
+.ourchive-mobile-list {
+  background-color: $ourchive-navy !important;
+  padding: 1em !important;
 }
