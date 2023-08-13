@@ -29,6 +29,7 @@ $global-secondary-background:                    $global-color !default;
 $global-success-background:                      $global-color !default;
 $global-warning-background:                      #CC3300 !default;
 $global-danger-background:                       #CC3300 !default;
+$ourchive-grey:                                  #C5C6C7 !default;
 
 // 2. Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";
@@ -62,12 +63,18 @@ $global-danger-background:                       #CC3300 !default;
 }
 
 .uk-card-header a {
-  color: $ourchive-dark-green;
+  color: $ourchive-purple;
+  font-weight: bold !important;
+}
+
+.uk-card-header a:hover {
+  color: $ourchive-light !important;
 }
 
 .content-block-parent a {
   font-weight: 500;
 }
+
 a:hover {
   text-decoration: none !important;
 }
@@ -115,7 +122,12 @@ input:focus + .slider {
 .ourchive-tag-list {
   padding: .5em !important;
   background: $ourchive-teal !important;
+  color: $ourchive-dark-green !important;
 }
+
+.ourchive-tile-title {
+    color: $ourchive-dark-green !important;
+  }
 
 .ourchive-tag-link {
   color: $ourchive-light !important;
@@ -123,4 +135,23 @@ input:focus + .slider {
 
 .ourchive-metadata-list {
   background-color: $ourchive-light !important;
+}
+
+.ourchive-divider {
+  border-top: 1px dotted $ourchive-grey !important;
+}
+
+.ourchive-card-head {
+  border-bottom: 1px solid $ourchive-grey !important;
+  border-top: 0px !important;
+}
+
+.ourchive-card-body {
+  border-top: 0px solid $ourchive-grey !important;
+  border-bottom: 1px solid $ourchive-grey !important;
+}
+
+.ourchive-card-footer {
+  border-top: 0px solid $ourchive-grey !important;
+  border-bottom: 0px solid $ourchive-grey !important;
 }

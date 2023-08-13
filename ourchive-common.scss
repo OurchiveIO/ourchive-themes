@@ -219,6 +219,7 @@ input:checked + .slider:before {
   }
  }
 
+// todo: this feels wrong.
  .ourchive-tag-text {
-  line-height: .5 !important;
+  line-height: 0 !important;
  }
