@@ -41,22 +41,8 @@ $global-medium-box-shadow:                       0 0px 0px $ourchive-navy !defau
 $global-large-box-shadow:                        0 0px 0px $ourchive-navy !default;
 $global-xlarge-box-shadow:                       0 0px 0px $ourchive-navy !default;
 
-//
-// Typography
-//
-
-// Source: https://github.com/indestructible-type/Jost
-@import "fonts/jost.css";
-
-$global-font-family:                             "Jost", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$global-font-size:                               18px !default;
-$global-line-height:                             1.5 !default;      // 24px
-
-$global-2xlarge-font-size:                       2.625rem !default; // 42px
-$global-xlarge-font-size:                        2rem !default;     // 32px
-$global-large-font-size:                         1.5rem !default;   // 24px
-$global-medium-font-size:                        1.33rem !default;  // 20px
-$global-small-font-size:                         0.975rem !default; // 14px
+// Import Ourchive common.
+@import "ourchive-common.scss";
 
 // 2. Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";
@@ -67,9 +53,6 @@ $global-small-font-size:                         0.975rem !default; // 14px
 
 // 4. Import UIkit.
 @import "uikit/src/scss/uikit-theme.scss";
-
-// 5. Import Ourchive common.
-@import "ourchive-common.scss";
 
 .uk-card-default {
   background-color: $ourchive-navy;
@@ -105,6 +88,21 @@ input:focus + .slider {
   color: $ourchive-light !important;
 }
 
-.ourchive-metadata-list {
-  padding: .33em !important;
+.ourchive-divider {
+  border-top: 1px dotted $ourchive-grey !important;
+}
+
+.ourchive-card-head {
+  border-bottom: 1px solid $ourchive-grey !important;
+  border-top: 0px !important;
+}
+
+.ourchive-card-body {
+  border-top: 0px solid $ourchive-grey !important;
+  border-bottom: 1px solid $ourchive-grey !important;
+}
+
+.ourchive-card-footer {
+  border-top: 0px solid $ourchive-grey !important;
+  border-bottom: 0px solid $ourchive-grey !important;
 }

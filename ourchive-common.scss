@@ -38,14 +38,17 @@
 @import "fonts/jost.css";
 
 $global-font-family:                             "Jost", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$global-font-size:                               12px !default;
-$global-line-height:                             1 !default;      // 24px
+$global-font-size:                               1em !default;
+$global-line-height:                             1.5 !default;      // 24px
 
 $global-2xlarge-font-size:                       2.625rem !default; // 42px
 $global-xlarge-font-size:                        2rem !default;     // 32px
-$global-large-font-size:                         1.5rem !default;   // 24px
-$global-medium-font-size:                        1rem !default;  // 20px
-$global-small-font-size:                         0.775rem !default; // 14px
+$global-large-font-size:                         1.25rem !default;   // 24px
+$global-medium-font-size:                        16px !default;  // 20px
+$global-small-font-size:                         0.8rem !default; // 14px
+
+$breakpoint-medium: 960px !default;
+$breakpoint-small: 640px !default;
 
 //
 // General
@@ -202,6 +205,20 @@ input:checked + .slider:before {
 
  @media (max-width: $breakpoint-small) {
   .ourchive-metadata-list {
-    font-size: 12px ! important;
+    font-size: 12px !important;
   }
+
+  .ourchive-tile-title {
+    font-size: 1.1em !important;
+  }
+ }
+
+  @media (min-width: $breakpoint-small) {
+  .ourchive-tile-title {
+    font-size: 1.25em !important;
+  }
+ }
+
+ .ourchive-tag-text {
+  line-height: .5 !important;
  }
