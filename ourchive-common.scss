@@ -186,3 +186,16 @@ input:checked + .slider:before {
   -webkit-line-clamp: 10;
   display: -webkit-box;
 }
+
+.ourchive-mobile-tag-ul {
+  list-style: none; 
+  padding: 0;
+}
+
+.ourchive-mobile-tag-li ~ .ourchive-mobile-tag-li::after{
+  content: ", ";
+}
+
+.ourchive-mobile-tag-list {
+  text-decoration: underline !important;
+}
