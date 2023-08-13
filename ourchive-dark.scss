@@ -62,6 +62,11 @@ $global-xlarge-box-shadow:                       0 0px 0px $ourchive-navy !defau
   background-color: $global-primary-background;
 }
 
+.uk-navbar-nav > li > a {
+  padding: .5em;
+  font-size: 1em !important;
+}
+
 .uk-alert-warning {
   color: $global-background !important;
 }

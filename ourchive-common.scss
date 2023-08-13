@@ -38,7 +38,7 @@
 @import "fonts/jost.css";
 
 $global-font-family:                             "Jost", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$global-font-size:                               1em !default;
+$global-font-size:                               1.15em !default;
 $global-line-height:                             1.5 !default;      // 24px
 
 $global-2xlarge-font-size:                       2.625rem !default; // 42px
@@ -68,8 +68,18 @@ em {
 }
 
 .uk-navbar-nav > li > a {
-	padding: .5em;
+  padding: .5em;
+  font-size: 1em !important;
 }
+
+.uk-navbar-dropdown-nav > li > a {
+  font-size: 1.1em !important;
+}
+
+.uk-nav-sub > li > a {
+  font-size: 1.1em !important;
+}
+
 .uk-navbar-nav > .uk-active {
   font-weight: bold;
 }
