@@ -199,3 +199,9 @@ input:checked + .slider:before {
 .ourchive-mobile-tag-list {
   text-decoration: underline !important;
 }
+
+ @media (max-width: $breakpoint-small) {
+  .ourchive-metadata-list {
+    font-size: 12px ! important;
+  }
+ }
