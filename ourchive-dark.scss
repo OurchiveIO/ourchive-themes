@@ -95,3 +95,12 @@ input:focus + .slider {
   background-color: $ourchive-navy !important;
   padding: 1em !important;
 }
+
+.ourchive-tag-list {
+  padding: .5em !important;
+  background: #3E5065 !important;
+}
+
+.ourchive-tag-link {
+  color: $ourchive-light !important;
+}

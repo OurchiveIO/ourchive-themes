@@ -31,6 +31,23 @@
 }
 
 //
+// Typography
+//
+
+// Source: https://github.com/indestructible-type/Jost
+@import "fonts/jost.css";
+
+$global-font-family:                             "Jost", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$global-font-size:                               12px !default;
+$global-line-height:                             1 !default;      // 24px
+
+$global-2xlarge-font-size:                       2.625rem !default; // 42px
+$global-xlarge-font-size:                        2rem !default;     // 32px
+$global-large-font-size:                         1.5rem !default;   // 24px
+$global-medium-font-size:                        1rem !default;  // 20px
+$global-small-font-size:                         0.775rem !default; // 14px
+
+//
 // General
 //
 
@@ -59,17 +76,7 @@ em {
 .uk-card-header a {
   text-decoration: none;
 }
-.uk-card-header a:hover {
-  font-weight: bold;
-}
 
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none !important;
-}
 .rating-star > svg > polygon {
   fill: gold;
 }

@@ -30,23 +30,6 @@ $global-success-background:                      $global-color !default;
 $global-warning-background:                      #CC3300 !default;
 $global-danger-background:                       #CC3300 !default;
 
-//
-// Typography
-//
-
-// Source: https://github.com/indestructible-type/Jost
-@import "fonts/jost.css";
-
-$global-font-family:                             "Jost", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$global-font-size:                               18px !default;
-$global-line-height:                             1.5 !default;      // 24px
-
-$global-2xlarge-font-size:                       2.625rem !default; // 42px
-$global-xlarge-font-size:                        2rem !default;     // 32px
-$global-large-font-size:                         1.5rem !default;   // 24px
-$global-medium-font-size:                        1.33rem !default;  // 20px
-$global-small-font-size:                         0.975rem !default; // 14px
-
 // 2. Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";
 @import "uikit/src/scss/mixins-theme.scss";
@@ -118,4 +101,22 @@ input:focus + .slider {
 .ourchive-mobile-list {
   background-color: $ourchive-offwhite !important;
   padding: 1em !important;
+}
+
+.ourchive-tag-list {
+  padding: .5em !important;
+}
+
+.ourchive-mobile-list {
+  background-color: $ourchive-teal !important;
+  padding: 1em !important;
+}
+
+.ourchive-tag-list {
+  padding: .5em !important;
+  background: $ourchive-teal !important;
+}
+
+.ourchive-tag-link {
+  color: $ourchive-light !important;
 }
