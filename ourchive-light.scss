@@ -10,6 +10,7 @@ $ourchive-teal-light:                            #CBF3F0 !default;
 $ourchive-dark-green:                            #0D4016 !default;
 $ourchive-purple:                                #70163C !default;
 $ourchive-offwhite:                              #EBEBEB !default;
+$ourchive-navy:                                  #1F2833 !default;
 
 $global-color:                                   #666 !default;
 $global-emphasis-color:                          #333 !default;
@@ -63,12 +64,12 @@ $ourchive-grey:                                  #C5C6C7 !default;
 }
 
 .uk-card-header a {
-  color: $ourchive-purple;
+  color: $global-emphasis-color;
   font-weight: bold !important;
 }
 
 .uk-card-header a:hover {
-  color: $ourchive-light !important;
+  color: $ourchive-teal-light !important;
 }
 
 .content-block-parent a {
@@ -154,4 +155,8 @@ input:focus + .slider {
 .ourchive-card-footer {
   border-top: 0px solid $ourchive-grey !important;
   border-bottom: 0px solid $ourchive-grey !important;
+}
+
+.uk-button-primary {
+  color: $ourchive-navy;
 }
