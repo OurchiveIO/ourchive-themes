@@ -11,8 +11,9 @@ $ourchive-dark-green:                            #0D4016 !default;
 $ourchive-purple:                                #70163C !default;
 $ourchive-offwhite:                              #EBEBEB !default;
 $ourchive-navy:                                  #1F2833 !default;
+$ourchive-black:                                 #141414 !default;
 
-$global-color:                                   #666 !default;
+$global-color:                                   #474747 !default;
 $global-emphasis-color:                          #333 !default;
 $global-muted-color:                             $global-color !default;
 
@@ -50,13 +51,13 @@ $ourchive-grey:                                  #C5C6C7 !default;
 }
 
 .uk-navbar-nav > li > a {
-  color: $ourchive-dark-green;
+  color: $ourchive-black;
 }
 .uk-text-meta {
-  color: $ourchive-dark-green;
+  color: $ourchive-black;
 }
 .uk-navbar-nav > li > a:hover {
-  color: $ourchive-dark-green;
+  color: $ourchive-black;
 }
 
 .uk-card-header {
@@ -64,12 +65,12 @@ $ourchive-grey:                                  #C5C6C7 !default;
 }
 
 .uk-card-header a {
-  color: $global-emphasis-color;
+  color: $ourchive-black;
   font-weight: bold !important;
 }
 
 .uk-card-header a:hover {
-  color: $ourchive-teal-light !important;
+  text-decoration: underline !important;
 }
 
 .content-block-parent a {
@@ -123,11 +124,11 @@ input:focus + .slider {
 .ourchive-tag-list {
   padding: .5em !important;
   background: $ourchive-teal !important;
-  color: $ourchive-dark-green !important;
+  color: $ourchive-black !important;
 }
 
 .ourchive-tile-title {
-    color: $ourchive-dark-green !important;
+    color: $ourchive-black !important;
   }
 
 .ourchive-tag-link {
