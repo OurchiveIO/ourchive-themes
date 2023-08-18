@@ -8,6 +8,7 @@ $ourchive-light:                                 #D6D6D6 !default;
 $ourchive-teal:                                  #45A29E !default;
 $ourchive-grey:                                  #C5C6C7 !default;
 $ourchive-navy:                                  #1F2833 !default;
+$ourchive-navy-light:                            #2F3C4C !default;
 
 $global-color:                                   $ourchive-light !default;
 $global-emphasis-color:                          $ourchive-light !default;
@@ -41,9 +42,6 @@ $global-medium-box-shadow:                       0 0px 0px $ourchive-navy !defau
 $global-large-box-shadow:                        0 0px 0px $ourchive-navy !default;
 $global-xlarge-box-shadow:                       0 0px 0px $ourchive-navy !default;
 
-// Import Ourchive common.
-@import "ourchive-common.scss";
-
 // 2. Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";
 @import "uikit/src/scss/mixins-theme.scss";
@@ -54,6 +52,9 @@ $global-xlarge-box-shadow:                       0 0px 0px $ourchive-navy !defau
 // 4. Import UIkit.
 @import "uikit/src/scss/uikit-theme.scss";
 
+// Import Ourchive common.
+@import "ourchive-common.scss";
+
 .uk-card-default {
   background-color: $ourchive-navy;
 }
@@ -63,7 +64,6 @@ $global-xlarge-box-shadow:                       0 0px 0px $ourchive-navy !defau
 }
 
 .uk-navbar-nav > li > a {
-  padding: .5em;
   font-size: 1em !important;
 }
 
@@ -119,6 +119,11 @@ input:focus + .slider {
 .uk-button-primary {
   background: $ourchive-teal !important;
   color: $ourchive-dark !important;
+}
+
+.uk-button-tag {
+  background: $ourchive-navy-light !important;
+  color: $ourchive-light !important;
 }
 
 .uk-button-secondary {
