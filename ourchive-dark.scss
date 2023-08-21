@@ -130,3 +130,15 @@ input:focus + .slider {
   background: $ourchive-grey !important;
   color: $ourchive-dark !important;
 }
+
+.uk-button-header {
+  background: $ourchive-navy !important;
+  color: $ourchive-orange !important;
+  border: 1px solid $ourchive-light;
+}
+
+.uk-button-header:hover {
+  background: $ourchive-light !important;
+  color: $ourchive-dark !important;
+  border: 1px solid $ourchive-navy;
+}
