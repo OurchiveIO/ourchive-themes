@@ -142,3 +142,11 @@ input:focus + .slider {
   color: $ourchive-dark !important;
   border: 1px solid $ourchive-navy;
 }
+
+.uk-tab::before {
+  border-bottom: 0px solid $ourchive-light;
+}
+
+.uk-tab > .uk-active > a {
+    border-bottom: 1px solid $ourchive-light;
+}
