@@ -31,6 +31,33 @@
 }
 
 //
+// Tag cloud: adapted from https://css-tricks.com/create-a-tag-cloud-with-some-simple-css-and-even-simpler-javascript/
+//
+
+.ourchive-homepage-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 960px;
+    margin: auto;
+    padding: 2rem 0 1rem;
+    list-style: none;
+    border-radius: 5px;
+  }
+
+.ourchive-homepage-tag {
+  display: flex;
+  align-items: center;
+  margin: 0.25rem 1rem;
+}
+
+.ourchive-homepage-tag__link {
+  padding: 5px 5px 0;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+//
 // Typography
 //
 
@@ -231,5 +258,5 @@ input:checked + .slider:before {
 
 // todo: this feels wrong.
  .ourchive-tag-text {
-  line-height: 0 !important;
+  line-height: 2.5 !important;
  }

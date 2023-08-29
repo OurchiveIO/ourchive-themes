@@ -33,6 +33,60 @@ $global-warning-background:                      #CC3300 !default;
 $global-danger-background:                       #CC3300 !default;
 $ourchive-grey:                                  #C5C6C7 !default;
 
+
+//
+// Tag cloud: adapted from https://css-tricks.com/create-a-tag-cloud-with-some-simple-css-and-even-simpler-javascript/
+//
+
+.ourchive-homepage-tags {
+  border: 2px solid $ourchive-black;
+}
+
+/* Beautiful colour scheme unashamedly stolen from ChrisCoyier.net! */
+.ourchive-homepage-tag:nth-of-type(4n+1) .ourchive-homepage-tag__link {
+  color: $ourchive-navy;
+}
+.ourchive-homepage-tag:nth-of-type(4n+2) .ourchive-homepage-tag__link {
+  color: $ourchive-purple;
+}
+.ourchive-homepage-tag:nth-of-type(4n+3) .ourchive-homepage-tag__link {
+  color: $ourchive-navy;
+}
+.ourchive-homepage-tag:nth-of-type(4n+4) .ourchive-homepage-tag__link {
+  color: $ourchive-purple;
+}
+
+.ourchive-homepage-tag:nth-of-type(4n+1) .ourchive-homepage-tag__link:focus,
+.ourchive-homepage-tag:nth-of-type(4n+1) .ourchive-homepage-tag__link:hover {
+  box-shadow: inset 0 -1.5em 0 0 $ourchive-orange;
+}
+.ourchive-homepage-tag:nth-of-type(4n+2) .ourchive-homepage-tag__link:focus,
+.ourchive-homepage-tag:nth-of-type(4n+2) .ourchive-homepage-tag__link:hover {
+  box-shadow: inset 0 -1.5em 0 0 $ourchive-teal;
+}
+.ourchive-homepage-tag:nth-of-type(4n+3) .ourchive-homepage-tag__link:focus,
+.ourchive-homepage-tag:nth-of-type(4n+3) .ourchive-homepage-tag__link:hover {
+  box-shadow: inset 0 -1.3em 0 0 $ourchive-orange;
+}
+.ourchive-homepage-tag:nth-of-type(4n+4) .ourchive-homepage-tag__link:focus,
+.ourchive-homepage-tag:nth-of-type(4n+4) .ourchive-homepage-tag__link:hover {
+  box-shadow: inset 0 -1.3em 0 0 $ourchive-teal;
+}
+
+.ourchive-homepage-tag:nth-of-type(4n+4) .ourchive-homepage-tag__link:focus,
+.ourchive-homepage-tag:nth-of-type(4n+4) .ourchive-homepage-tag__link:hover,
+.ourchive-homepage-tag:nth-of-type(4n+2) .ourchive-homepage-tag__link:focus,
+.ourchive-homepage-tag:nth-of-type(4n+2) .ourchive-homepage-tag__link:hover {
+  color: $ourchive-navy !important;
+}
+
+.ourchive-homepage-tag:nth-of-type(4n+1) .ourchive-homepage-tag__link:focus,
+.ourchive-homepage-tag:nth-of-type(4n+1) .ourchive-homepage-tag__link:hover,
+.ourchive-homepage-tag:nth-of-type(4n+3) .ourchive-homepage-tag__link:focus,
+.ourchive-homepage-tag:nth-of-type(4n+3) .ourchive-homepage-tag__link:hover {
+  color: $ourchive-navy !important;
+}
+
 // 2. Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";
 @import "uikit/src/scss/mixins-theme.scss";
@@ -45,6 +99,10 @@ $ourchive-grey:                                  #C5C6C7 !default;
 
 // 5. Import Ourchive common.
 @import "ourchive-common.scss";
+
+//
+// General
+//
 
 .ourchive-navbar {
   background-color: $global-primary-background;
@@ -176,4 +234,18 @@ input:focus + .slider {
   background: $ourchive-black !important;
   color: $ourchive-light !important;
   border: 1px solid $ourchive-black;
+}
+
+.uk-button-tag {
+  background: $ourchive-teal !important;
+  padding: 5px 10px 5px 10px;
+  margin-top: 5px;
+}
+
+.uk-button-tag a {
+  color: $ourchive-black !important;
+}
+
+.uk-button-tag a:hover {
+  text-decoration: underline !important;
 }
