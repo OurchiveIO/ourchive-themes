@@ -99,6 +99,13 @@ em {
   font-size: 1em !important;
 }
 
+.uk-navbar-dropdown {
+  // ensure the user can scroll down navs if zoomed in
+  // header is about 6em tall
+  max-height: calc(100vh - 6em);
+  overflow: scroll;
+}
+
 .uk-navbar-dropdown-nav > li > a {
   font-size: 1.1em !important;
 }
