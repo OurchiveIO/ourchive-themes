@@ -3,3 +3,7 @@
 *.sass.map
 *.scss.map
 uikit/
+
+
+compile.sh
+compile-icons.sh
