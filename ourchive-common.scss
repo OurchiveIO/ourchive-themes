@@ -31,7 +31,7 @@
 }
 
 //
-// Tag cloud: adapted from https://css-tricks.com/create-a-tag-cloud-with-some-simple-css-and-even-simpler-javascript/
+// Tag cloud adapted from https://css-tricks.com/create-a-tag-cloud-with-some-simple-css-and-even-simpler-javascript/
 //
 
 .ourchive-homepage-tags {
@@ -40,9 +40,8 @@
     justify-content: center;
     max-width: 960px;
     margin: auto;
-    padding: 2rem 0 1rem;
     list-style: none;
-    border-radius: 5px;
+    padding: 0px 0px 30px 0px;
   }
 
 .ourchive-homepage-tag {
@@ -83,6 +82,23 @@ $breakpoint-small: 640px !default;
 
 em {
   color: $global-color !important;
+}
+
+.ourchive-top-level-grid {
+    padding-left: 0px !important;
+}
+
+.ourchive-content-block-parent {
+    max-width: 1600px;
+}
+
+.ourchive-parent-grid {
+    padding-left: 10px !important;
+}
+
+.ourchive-homepage-search {
+    padding: 10px !important;
+    margin: auto;
 }
 
 .uk-card-body {
@@ -132,6 +148,15 @@ em {
 	.uk-navbar-nav {
 	    gap: 5px; 
 	}
+}
+
+@media (max-width: $breakpoint-small) {
+    .ourchive-padding-tiny-horizontal {
+      padding-left: 30px !important;
+  }
+  .ourchive-parent-grid {
+      padding: 0px !important;
+  }
 }
 
 .ourchive-tag-entry {
