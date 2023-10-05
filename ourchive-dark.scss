@@ -146,18 +146,18 @@ input:focus + .slider {
 }
 
 .ourchive-card-head {
-  border-bottom: 1px solid $ourchive-grey !important;
+  border-bottom: 1px solid $ourchive-navy-light !important;
   border-top: 0px !important;
 }
 
 .ourchive-card-body {
-  border-top: 0px solid $ourchive-grey !important;
-  border-bottom: 1px solid $ourchive-grey !important;
+  border-top: 0px solid $ourchive-navy-light !important;
+  border-bottom: 1px solid $ourchive-navy-light !important;
 }
 
 .ourchive-card-footer {
-  border-top: 0px solid $ourchive-grey !important;
-  border-bottom: 0px solid $ourchive-grey !important;
+  border-top: 0px solid $ourchive-navy-light !important;
+  border-bottom: 0px solid $ourchive-navy-light !important;
 }
 
 .uk-offcanvas-bar {
@@ -229,4 +229,13 @@ input:focus + .slider {
 
 .uk-button-danger {
   color: $ourchive-dark !important;
+}
+
+.ourchive-hr {
+  border: 0;
+  border-top: 1px solid $ourchive-navy-light;
+}
+
+.uk-notification {
+  border: 1px solid $ourchive-navy-light;
 }

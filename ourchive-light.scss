@@ -153,6 +153,10 @@ input:focus + .slider {
   box-shadow: 0 0 1px $global-primary-background;
 }
 
+.slider {
+  background-color: $global-color;
+}
+
 .ourchive-nav-search {
   color: $ourchive-dark-green !important;
 }
@@ -266,4 +270,17 @@ input:focus + .slider {
 
 .ourchive-span-link {
   color: $ourchive-purple;
+}
+
+.ourchive-hr {
+  border: 0;
+  border-top: 1px solid $ourchive-grey !important;
+}
+
+.uk-notification {
+  border: 1px solid $global-emphasis-color !important;
+}
+
+.uk-checkbox:checked {
+  background-color: $global-color;
 }
