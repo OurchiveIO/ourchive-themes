@@ -121,10 +121,16 @@ $global-xlarge-box-shadow:                       0 0px 0px $ourchive-navy !defau
 
 input:checked + .slider {
   background-color: $global-secondary-background;
+  border: 0px solid $global-color;
 }
 
 input:focus + .slider {
   box-shadow: 0 0 1px $global-secondary-background;
+}
+
+.slider {
+  background-color: $ourchive-navy;
+  border: 1px solid $global-color;
 }
 
 .ourchive-mobile-list {
