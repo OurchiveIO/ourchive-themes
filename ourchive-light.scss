@@ -278,9 +278,17 @@ input:focus + .slider {
 }
 
 .uk-notification {
-  border: 1px solid $global-emphasis-color !important;
+  border: 1px solid $ourchive-grey !important;
 }
 
 .uk-checkbox:checked {
   background-color: $global-color;
+}
+
+.ourchive-comment-even {
+  background-color: #EBEBEB;
+}
+
+.ourchive-comment-odd {
+  border: 1px solid #E0E0E0 !important;
 }

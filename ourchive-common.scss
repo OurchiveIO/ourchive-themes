@@ -308,3 +308,15 @@ input:checked + .slider:before {
 .uk-pagination>*>* {
   color: $global-link-color;
 }
+
+.uk-comment {
+  padding: 1em;
+}
+
+.uk-comment-list {
+  margin-top: .5em !important;
+}
+
+.ourchive-top-level li {
+  margin-top: .5em !important;
+}

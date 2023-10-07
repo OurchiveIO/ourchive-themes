@@ -245,3 +245,11 @@ input:focus + .slider {
 .uk-notification {
   border: 1px solid $ourchive-navy-light;
 }
+
+.ourchive-comment-even {
+  background-color: $ourchive-navy;
+}
+
+.ourchive-comment-odd {
+  border: 1px solid $ourchive-navy-light;
+}
