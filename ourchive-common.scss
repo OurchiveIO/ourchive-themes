@@ -305,6 +305,10 @@ input:checked + .slider:before {
   padding-right: .5em;
 }
 
+.ourchive-icon-wrapper a:hover {
+  text-decoration: none !important;
+}
+
 .uk-pagination>*>* {
   color: $global-link-color;
 }
