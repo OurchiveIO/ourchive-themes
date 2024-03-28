@@ -114,6 +114,18 @@ $ourchive-grey:                                  #C5C6C7 !default;
   color: $ourchive-black;
 }
 
+.uk-navbar-dropdown-nav>li>a:hover {
+  color: $ourchive-orange;
+}
+.uk-navbar-dropdown-nav .uk-nav-sub a:hover {
+  color: $ourchive-orange;
+}
+
+.uk-link-muted:hover {
+  color: $ourchive-light !important;
+  text-decoration: none;
+}
+
 .uk-card-header {
   background-color: $global-primary-background;
 }
@@ -123,8 +135,14 @@ $ourchive-grey:                                  #C5C6C7 !default;
   font-weight: bold !important;
 }
 
+.uk-card-header a:hover {
+  text-decoration: none !important;
+  color: $ourchive-light;
+}
+
 .ourchive-tile-title a:hover {
-  text-decoration: underline !important;
+  text-decoration: none !important;
+  color: $ourchive-light;
 }
 
 .content-block-parent a {
@@ -133,6 +151,7 @@ $ourchive-grey:                                  #C5C6C7 !default;
 
 a:hover {
   text-decoration: none !important;
+  color: $ourchive-orange;
 }
 
 .ourchive-li-flyover > dl > dt {
@@ -247,7 +266,8 @@ input:focus + .slider {
 }
 
 .uk-button-tag a:hover {
-  text-decoration: underline !important;
+  text-decoration: none !important;
+  color: $ourchive-light;
 }
 
 .uk-list-striped>*:nth-of-type(odd) {

@@ -147,6 +147,11 @@ input:focus + .slider {
   color: $ourchive-light !important;
 }
 
+.uk-link-muted:hover {
+  color: $ourchive-orange !important;
+  text-decoration: none;
+}
+
 .ourchive-divider {
   border-top: 1px dotted $ourchive-grey !important;
 }
@@ -191,6 +196,13 @@ input:focus + .slider {
   background: $ourchive-navy !important;
   color: $ourchive-orange !important;
   border: 1px solid $ourchive-light;
+}
+
+.uk-navbar-dropdown-nav>li>a:hover {
+  color: $ourchive-orange;
+}
+.uk-navbar-dropdown-nav .uk-nav-sub a:hover {
+  color: $ourchive-orange;
 }
 
 .uk-button-header:hover {
