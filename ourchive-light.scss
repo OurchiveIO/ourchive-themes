@@ -104,6 +104,10 @@ $ourchive-grey:                                  #C5C6C7 !default;
   background-color: $global-primary-background;
 }
 
+.ourchive-mobile-list a:hover {
+  color: $ourchive-light;
+}
+
 .uk-navbar-nav > li > a {
   color: $ourchive-black;
 }

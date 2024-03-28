@@ -107,6 +107,10 @@ $global-xlarge-box-shadow:                       0 0px 0px $ourchive-navy !defau
   background-color: $ourchive-navy;
 }
 
+.ourchive-mobile-list a:hover {
+  text-decoration: none !important;
+}
+
 .ourchive-navbar {
   background-color: $global-primary-background;
 }
