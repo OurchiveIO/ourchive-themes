@@ -233,6 +233,11 @@ input:focus + .slider {
     padding-right: 30px;
 }
 
+.ourchive-border-left {
+    border-left: 1px solid $ourchive-grey;
+    padding-left: 15px;
+}
+
 .ourchive-homepage-tags {
     border-bottom: 1px solid $ourchive-navy-light;
   }
@@ -268,4 +273,9 @@ input:focus + .slider {
 
 .ourchive-comment-odd {
   border: 1px solid $ourchive-navy-light;
+}
+
+.ourchive-homepage-card {
+    background-color: $ourchive-navy-light;
+    border: 1px solid $ourchive-navy-light;
 }

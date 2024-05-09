@@ -338,3 +338,14 @@ input:checked + .slider:before {
 .ourchive-top-level li {
   margin-top: .5em !important;
 }
+
+/* Homepage */
+
+.ourchive-homepage-card {
+    border-radius: .5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: .5em;
+    padding-right: .5em;
+    text-align: center;
+}
