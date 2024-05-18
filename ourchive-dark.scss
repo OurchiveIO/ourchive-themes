@@ -115,6 +115,25 @@ $global-xlarge-box-shadow:                       0 0px 0px $ourchive-navy !defau
   background-color: $global-primary-background;
 }
 
+.ourchive-nav-hr {
+  border-top: 1px solid $ourchive-navy-light;
+}
+
+.ourchive-navbar-search-input {
+  border: 1px solid $ourchive-navy-light !important;
+}
+
+.nav-button-default {
+    background-color: $ourchive-navy-light;
+    color: $ourchive-light;
+    border: 1px solid $ourchive-navy;
+}
+
+.nav-button-default:hover {
+    background-color: $ourchive-light;
+    color: $ourchive-navy-light;
+}
+
 .uk-navbar-nav > li > a {
   font-size: 1em !important;
 }

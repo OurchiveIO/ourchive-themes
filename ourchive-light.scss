@@ -104,6 +104,24 @@ $ourchive-grey:                                  #C5C6C7 !default;
   background-color: $global-primary-background;
 }
 
+.ourchive-nav-hr {
+  border-top: 1px solid $ourchive-grey;
+}
+
+.ourchive-navbar-search-input {
+  border: 1px solid $global-color !important;
+}
+
+.nav-button-default {
+    background-color: $ourchive-orange;
+    color: $ourchive-navy;
+    border: 1px solid $global-color;
+}
+
+.nav-button-default:hover {
+    color: $global-color;
+}
+
 .ourchive-mobile-list a:hover {
   color: $ourchive-light;
 }
