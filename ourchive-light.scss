@@ -340,6 +340,15 @@ input:focus + .slider {
 }
 
 .ourchive-homepage-card {
-    background-color: $ourchive-grey;
-    border: 1px solid $ourchive-grey;
+    background-color: $ourchive-teal;
+    border: 1px solid $ourchive-light;
+}
+
+.ourchive-homepage-card a {
+    color: $global-color;
+    font-weight: bold;
+}
+
+.ourchive-homepage-card a:hover {
+    color: $ourchive-light;
 }
