@@ -123,6 +123,11 @@ $global-xlarge-box-shadow:                       0 0px 0px $ourchive-navy !defau
   border: 1px solid $ourchive-navy-light !important;
 }
 
+.ourchive-notification {
+  background-color: $ourchive-orange;
+  border: 0.05em solid $ourchive-navy;
+}
+
 .nav-button-default {
     background-color: $ourchive-navy-light;
     color: $ourchive-light;

@@ -112,6 +112,11 @@ $ourchive-grey:                                  #C5C6C7 !default;
   border: 1px solid $global-color !important;
 }
 
+.ourchive-notification {
+  background-color: $ourchive-orange;
+  border: 0.05em solid $ourchive-light;
+}
+
 .nav-button-default {
     background-color: $ourchive-orange;
     color: $ourchive-navy;

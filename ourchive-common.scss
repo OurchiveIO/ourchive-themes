@@ -106,6 +106,16 @@ em {
   min-height: 40px !important;
 }
 
+.ourchive-notification {
+  /* adapted from: https://stackoverflow.com/questions/5747863/easiest-css-for-red-notification-badge-with-count */
+  position: absolute;
+  right: .5em;
+  top: 1.5em;
+  min-width: .76em;
+  height: .76em;
+  border-radius: 0.38em;
+}
+
 .ourchive-article-parent {
   padding-left: 0px !important;
 }
