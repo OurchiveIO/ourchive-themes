@@ -106,16 +106,6 @@ em {
   min-height: 40px !important;
 }
 
-.ourchive-notification {
-  /* adapted from: https://stackoverflow.com/questions/5747863/easiest-css-for-red-notification-badge-with-count */
-  position: absolute;
-  right: .5em;
-  top: 1.5em;
-  min-width: .76em;
-  height: .76em;
-  border-radius: 0.38em;
-}
-
 .ourchive-article-parent {
   padding-left: 0px !important;
 }
@@ -162,10 +152,6 @@ em {
   font-size: 1.1em !important;
 }
 
-.uk-nav-sub > li > a {
-  font-size: 1.1em !important;
-}
-
 .uk-navbar-nav > .uk-active {
   font-weight: bold;
 }
@@ -197,6 +183,15 @@ em {
 	.uk-navbar-nav {
 	    gap: 5px; 
 	}
+  .ourchive-notification {
+    /* adapted from: https://stackoverflow.com/questions/5747863/easiest-css-for-red-notification-badge-with-count */
+    position: absolute;
+    right: .5em;
+    top: 1.5em;
+    min-width: .76em;
+    height: .76em;
+    border-radius: 0.38em;
+  }
 }
 
 @media (max-width: $breakpoint-medium) {
@@ -215,6 +210,16 @@ em {
 
   .ourchive-padding-remove-horizontal {
     padding-left: 0px !important;
+  }
+
+  .ourchive-notification {
+    /* adapted from: https://stackoverflow.com/questions/5747863/easiest-css-for-red-notification-badge-with-count */
+    position: absolute;
+    left: .5em;
+    top: 1.5em;
+    min-width: .76em;
+    height: .76em;
+    border-radius: 0.38em;
   }
 }
 
