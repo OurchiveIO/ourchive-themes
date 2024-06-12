@@ -75,6 +75,8 @@ $global-small-font-size:                         0.8rem !default; // 14px
 
 $breakpoint-medium: 960px !default;
 $breakpoint-small: 640px !default;
+$breakpoint-large: 1200px !default;
+
 
 //
 // General
@@ -86,6 +88,10 @@ a:hover {
 
 em {
   color: $global-color !important;
+}
+
+.ourchive-search-tab > a {
+  font-size: 1rem !important;
 }
 
 .ourchive-read-div {
@@ -137,7 +143,7 @@ em {
 }
 
 .uk-navbar-nav > li > a {
-  padding: .5em;
+  padding: .5em !important;
   font-size: 1em !important;
 }
 
@@ -186,11 +192,11 @@ em {
   .ourchive-notification {
     /* adapted from: https://stackoverflow.com/questions/5747863/easiest-css-for-red-notification-badge-with-count */
     position: absolute;
-    right: .5em;
-    top: 1.5em;
-    min-width: .76em;
-    height: .76em;
-    border-radius: 0.38em;
+    right: .1em;
+    top: 1em;
+    min-width: .6em;
+    height: .6em;
+    border-radius: 0.3em;
   }
 }
 
