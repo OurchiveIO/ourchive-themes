@@ -406,12 +406,9 @@ input:checked + .slider:before {
 /* Work Tile */
 
 .ourchive-work-card {
+    height: auto !important;
     border: 1px solid #ccc;
     padding: 15px !important;
-}
-
-.ourchive-work-card {
-    height: auto !important;
 }
 
 .ourchive-work-card .card-metadata {
@@ -433,4 +430,10 @@ input:checked + .slider:before {
 .work-tile-cover {
     width:80%;
     overflow:hidden;
+}
+
+/* Work Body */
+
+.ourchive-blockquote {
+  border-left: 1px solid;
 }
