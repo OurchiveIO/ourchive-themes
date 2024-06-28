@@ -116,16 +116,16 @@ em {
   padding-left: 0px !important;
 }
 
-.ourchive-top-level-grid {
-    padding-left: 0px !important;
-}
+//.ourchive-top-level-grid {
+//    padding-left: 0px !important;
+//}
 
 .ourchive-content-block-parent {
-    max-width: 1600px;
+    max-width: 1400px;
 }
 
-.ourchive-parent-grid {
-    padding-left: 10px !important;
+.ourchive-content-padding {
+  padding-top: 1em !important;
 }
 
 .ourchive-homepage-search {
@@ -198,6 +198,11 @@ em {
     height: .6em;
     border-radius: 0.3em;
   }
+
+  .ourchive-chive-padding {
+    padding-left: 200px !important;
+    padding-right: 200px !important;
+  }
 }
 
 @media (max-width: $breakpoint-medium) {
@@ -210,13 +215,6 @@ em {
     .ourchive-padding-tiny-horizontal {
       padding-left: 30px !important;
   }
-  .ourchive-parent-grid {
-      padding: 0px !important;
-  }
-
-  .ourchive-padding-remove-horizontal {
-    padding-left: 0px !important;
-  }
 
   .ourchive-notification {
     /* adapted from: https://stackoverflow.com/questions/5747863/easiest-css-for-red-notification-badge-with-count */
@@ -226,6 +224,16 @@ em {
     min-width: .76em;
     height: .76em;
     border-radius: 0.38em;
+  }
+
+  .ourchive-chive-padding {
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+  }
+
+  .ourchive-chive-grid {
+    padding-left: 15px !important;
+    padding-right: 0px !important
   }
 }
 
@@ -393,4 +401,36 @@ input:checked + .slider:before {
     padding-left: .5em;
     padding-right: .5em;
     text-align: center;
+}
+
+/* Work Tile */
+
+.ourchive-work-card {
+    border: 1px solid #ccc;
+    padding: 15px !important;
+}
+
+.ourchive-work-card {
+    height: auto !important;
+}
+
+.ourchive-work-card .card-metadata {
+    max-height: 60px;
+}
+
+.tag-container {
+    overflow:hidden;
+}
+
+.summary-container {
+    overflow:hidden;
+}
+
+.show-more-btn {
+    display: none;
+}
+
+.work-tile-cover {
+    width:80%;
+    overflow:hidden;
 }
