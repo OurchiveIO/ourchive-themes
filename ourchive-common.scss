@@ -437,3 +437,10 @@ input:checked + .slider:before {
 .ourchive-blockquote {
   border-left: 1px solid;
 }
+
+/* Metadata */
+
+.ourchive-metadata-list {
+  display: flex !important; 
+  justify-content: space-between !important;
+}
