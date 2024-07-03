@@ -33,6 +33,8 @@ $global-warning-background:                      #CC3300 !default;
 $global-danger-background:                       #CC3300 !default;
 $ourchive-grey:                                  #C5C6C7 !default;
 
+$global-border:                                  #e5e5e5 !default;
+
 
 //
 // Tag cloud adapted from https://css-tricks.com/create-a-tag-cloud-with-some-simple-css-and-even-simpler-javascript/
@@ -385,4 +387,22 @@ input:focus + .slider {
 
 .ourchive-muted {
   color: #707070;
+}
+
+/* Search */
+
+.uk-search-input:focus {
+  border: 1px solid $global-border !important;
+}
+
+.navbar-mobile-search {
+    border: 1px solid $global-border;
+}
+
+#filter-toggle-dsk {
+    background-color: $global-background;
+}
+
+#filter-toggle-dsk-mobile {
+    background-color: $global-background;
 }

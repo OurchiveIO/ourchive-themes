@@ -345,10 +345,21 @@ input:checked + .slider:before {
  @media (max-width: $breakpoint-small) {
   .ourchive-metadata-list {
     font-size: 12px !important;
+    display: inline-block;
+    padding-right: 1em;
   }
 
-  .ourchive-tile-title {
-    font-size: 1.1em !important;
+   .ourchive-metadata-list span {
+        padding-left: .25em;
+        padding-right: .25em;
+    }
+
+    .ourchive-tile-title {
+      font-size: 1.1em !important;
+    }
+
+   .ourchive-filter-button {
+      margin-right: -2px;
   }
  }
 
@@ -436,4 +447,31 @@ input:checked + .slider:before {
 
 .ourchive-blockquote {
   border-left: 1px solid;
+}
+
+/* Navbar Filtering */
+
+.ourchive-filter-button {
+    margin-right: -2px;
+}
+
+#filter-toggle-dsk {
+    width: 93.66%;
+}
+
+#filter-toggle-dsk-mobile {
+    width: 85%;
+    margin-top: 3%;
+    position: absolute;
+    margin-left: -10%;
+    z-index: 999;
+}
+
+.navbar-mobile-search {
+    line-height: 2.6em;
+    margin-right: -5px;
+}
+
+.navbar-mobile-search .mobile-filter {
+  padding: .25em;
 }
