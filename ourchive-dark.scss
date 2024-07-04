@@ -12,7 +12,7 @@ $ourchive-navy-light:                            #2F3C4C !default;
 
 $global-color:                                   $ourchive-light !default;
 $global-emphasis-color:                          $ourchive-light !default;
-$global-muted-color:                             $ourchive-light !default;
+$global-muted-color:                             #9AA6B5 !default;
 
 $global-link-color:                              $ourchive-orange !default;
 $global-link-hover-color:                        $ourchive-light !default;
@@ -35,6 +35,7 @@ $progress-bar-background:                        $global-inverse-color !default;
 $accordion-icon-color:                           $ourchive-orange !default;
 
 $global-border:                                  $ourchive-navy-light !default;
+$ourchive-dark-orange:                           #8A5005 !default;
 
 //
 // Box-Shadows
@@ -367,4 +368,8 @@ input:focus + .slider {
 #filter-toggle-dsk-mobile {
     background-color: $global-primary-background;
     border: 0;
+}
+
+.ourchive-autocomplete-child:hover {
+  background-color: $ourchive-dark-orange;
 }
