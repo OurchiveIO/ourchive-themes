@@ -7,3 +7,8 @@ uikit/
 
 compile.sh
 compile-icons.sh
+
+.local-notes*
+
+node_modules/
+.idea/
