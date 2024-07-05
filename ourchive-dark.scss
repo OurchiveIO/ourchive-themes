@@ -291,7 +291,7 @@ input:focus + .slider {
 }
 
 .ourchive-border-left {
-    border-left: 1px solid $ourchive-grey;
+    border-left: 1px solid $ourchive-navy-light;
     padding-left: 15px;
 }
 
@@ -372,4 +372,12 @@ input:focus + .slider {
 
 .ourchive-autocomplete-child:hover {
   background-color: $ourchive-dark-orange;
+}
+
+.search-container ul {
+  background: $ourchive-navy-light;
+}
+
+.search-container input {
+  color: $ourchive-light;
 }
