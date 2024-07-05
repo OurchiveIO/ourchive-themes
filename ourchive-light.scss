@@ -415,3 +415,7 @@ input:focus + .slider {
 .search-container ul {
   background: $global-background;
 }
+
+.multi-select-component {
+  border-color: $global-border !important;
+}

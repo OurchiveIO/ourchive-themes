@@ -381,3 +381,7 @@ input:focus + .slider {
 .search-container input {
   color: $ourchive-light;
 }
+
+.multi-select-component {
+  border-color: $global-border !important;
+}
