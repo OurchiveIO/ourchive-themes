@@ -194,11 +194,6 @@ $internal-ourchive-accordion-close-image: "data:image/svg+xml,%3Csvg width='20' 
   color: $ourchive-light;
 }
 
-.ourchive-tile-title a:hover {
-  text-decoration: none !important;
-  color: $ourchive-light;
-}
-
 .content-block-parent a {
   font-weight: 500;
 }
@@ -418,4 +413,8 @@ input:focus + .slider {
 
 .multi-select-component {
   border-color: $global-border !important;
+}
+
+.ourchive-filter-button {
+  border-color: $global-color !important;
 }
