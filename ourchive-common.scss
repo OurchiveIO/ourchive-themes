@@ -346,7 +346,7 @@ input:checked + .slider:before {
  @media (max-width: $breakpoint-small) {
   .ourchive-metadata-list {
     font-size: 12px !important;
-    display: inline-block;
+    display: inline-block !important;
     padding-right: 1em;
   }
 
@@ -368,6 +368,10 @@ input:checked + .slider:before {
   .ourchive-tile-title {
     font-size: 1.25em !important;
   }
+
+    .ourchive-metadata-list {
+      display: flex;
+    }
  }
 
 // todo: this feels wrong.
@@ -480,6 +484,5 @@ input:checked + .slider:before {
 /* Metadata */
 
 .ourchive-metadata-list {
-  display: flex !important;
   justify-content: space-between !important;
 }
