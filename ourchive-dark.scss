@@ -385,3 +385,7 @@ input:focus + .slider {
 .multi-select-component {
   border-color: $global-border !important;
 }
+
+.multi-select-component input::placeholder {
+   color: $ourchive-light;
+}
