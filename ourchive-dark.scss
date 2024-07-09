@@ -389,3 +389,7 @@ input:focus + .slider {
 .multi-select-component input::placeholder {
    color: $ourchive-light;
 }
+
+.ourchive-badge-link:hover {
+  color: $ourchive-dark-orange !important;
+}
