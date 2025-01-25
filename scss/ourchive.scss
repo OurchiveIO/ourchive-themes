@@ -119,3 +119,15 @@ $utilities: map-merge(
     filter:"alpha(opacity=100)";
     -ms-filter:"alpha(opacity=100)"
 }
+
+.osm-container a.collapsed span.oc-show-less {
+    display: none;
+}
+
+.osm-container a:not(.collapsed) span.oc-show-more {
+    display: none;
+}
+
+.osm-container a:not(.collapsed) span.oc-show-less {
+    display: inline-block;
+}
