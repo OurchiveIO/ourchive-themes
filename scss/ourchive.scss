@@ -16,6 +16,7 @@ $light:         #F3FCFB;
 $dark:          #163C38;
 $enable-rounded : false;
 $border-radius: 0;
+$light-orange: #FDECCE;
 
 
 
@@ -80,6 +81,11 @@ $utilities: map-merge(
 .btn-outline-light {
     @include button-outline-variant($gray-400, #222222, lighten($gray-400,5%), $gray-400);
     color: $dark;
+}
+
+.oc-badge {
+  color: $dark;
+  background-color: $light-orange;
 }
 
 // everything generic below, for migration post-migration [clown emoji]
