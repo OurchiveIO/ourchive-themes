@@ -88,6 +88,16 @@ $utilities: map-merge(
   background-color: $light-orange;
 }
 
+.oc-bg-light {
+    background-color: $white;
+    color: $dark;
+}
+
+.oc-bg-secondary {
+    background-color: $gray-100;
+    color: $dark;
+}
+
 // everything generic below, for migration post-migration [clown emoji]
 
 .form-control {
@@ -136,4 +146,16 @@ $utilities: map-merge(
 
 .osm-container a:not(.collapsed) span.oc-show-less {
     display: inline-block;
+}
+
+.oc-icon {
+    max-width: 150px;
+}
+
+.oc-justify-end {
+    justify-items: end;
+}
+
+.oc-justify-center {
+    justify-items: center;
 }
