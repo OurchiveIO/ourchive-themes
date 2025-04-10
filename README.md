@@ -18,6 +18,10 @@ To compile and copy custom icons (assumes you have Sass & pnpm installed):
 
 This also assumes your directory structure has the uikit repo clone directly inside of the parent repo folder (ourchive-themes).
 
+---
+
+`sass --watch ./scss/ourchive.scss ../ourchive_app/frontend/static/frontend/css/ourchive-light.css`
+
 # Credit
 
 Custom icons are pulled from [The Noun Project](https://thenounproject.com):
