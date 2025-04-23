@@ -200,6 +200,12 @@ $utilities: map-merge(
     color: $dark;
 }
 
+.choices__list--multiple .choices__item {
+    background-color: $primary !important;
+    border: 1px solid $dark !important;
+    border-radius: 0px;
+}
+
 .chive-rich-text {
     position: relative;
     overflow: hidden;

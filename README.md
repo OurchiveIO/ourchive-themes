@@ -2,27 +2,32 @@
 
 This repo holds themes used in [ourchive](https://github.com/c-e-p/). 
 
-We follow UIKit's [documentation](https://getuikit.com/docs/sass) for creating & modifying a theme using Sass. The assumption is that you will have a subdirectory, within this repo, containing the UIKit source from Git.
+We use [Bootstrap](https://getbootstrap.com/docs/5.3/).
 
-Compiled CSS is then added to the project by the developer.
+Recommended workflow: 
 
-Icons are in the `custom/` folder and should be moved to the correct location (`uikit/custom`) after you clone UIKit, following the [documentation](https://getuikit.com/docs/custom-icons). 
+Clone the theme repo into a `theme` folder within your cloned Ourchive directory. Assumed folder structure:
 
-Ubuntu CLI to compile without copying custom icons (assumes you have Sass installed):
+````
+- ourchive
+-- ourchive_app
+-- theme
+-- .dockerignore
+-- [other top-level files & directories]
+````
+Work out of the custom SASS in `scss/ourchive.scss`.
 
-```sass ourchive-dark.scss --style=compressed > ourchive-dark.css && cp ourchive-dark.css /path/to/repo/ourchive/ourchive_app/frontend/static/frontend/css/ourchive-dark.css && sass ourchive-light.scss --style=compressed > ourchive-light.css && cp ourchive-light.css /path/to/repo/ourchive/ourchive_app/frontend/static/frontend/css/ourchive-light.css```
+Compiled CSS is then added to the Django project by the developer:
 
-To compile and copy custom icons (assumes you have Sass & pnpm installed):
+`sass --watch ./scss/ourchive.scss ../ourchive_app/frontend/static/frontend/css/ourchive.css`
 
-```cd uikit/ && pnpm compile && cd ../ && sass ourchive-dark.scss --style=compressed > ourchive-dark.css && cp ourchive-dark.css /path/to/repo/ourchive/ourchive_app/frontend/static/frontend/css/ourchive-dark.css && sass ourchive-light.scss --style=compressed > ourchive-light.css && cp ourchive-light.css /path/to/repo/ourchive/ourchive_app/frontend/static/frontend/css/ourchive-light.css && cp uikit/dist/js/uikit-icons.min.js /path/to/repo/ourchive/ourchive_app/frontend/static/frontend/js/uikit-icons.min.js```
-
-This also assumes your directory structure has the uikit repo clone directly inside of the parent repo folder (ourchive-themes).
+From there, assets are compiled and deployed like you would for any other Django project.
 
 ---
 
-`sass --watch ./scss/ourchive.scss ../ourchive_app/frontend/static/frontend/css/ourchive-light.css`
-
 # Credit
+
+** Note: this section is under construction. The below reflects icons used prior to Ourchive's 0.7.0 release. **
 
 Custom icons are pulled from [The Noun Project](https://thenounproject.com):
 
