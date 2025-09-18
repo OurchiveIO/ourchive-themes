@@ -202,8 +202,9 @@ $utilities: map-merge(
 
 .choices__list--multiple .choices__item {
     background-color: $primary !important;
+    color: $light !important;
     border: 1px solid $dark !important;
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 .chive-rich-text {
