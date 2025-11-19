@@ -19,7 +19,7 @@ Work out of the custom SASS in `scss/ourchive.scss`.
 
 Compiled CSS is then added to the Django project by the developer:
 
-`sass --watch ./scss/ourchive.scss ../ourchive_app/frontend/static/frontend/css/ourchive.css`
+`sass --watch ./scss/ourchive.scss ../../ourchive_app/frontend/static/frontend/css/ourchive.css`
 
 From there, assets are compiled and deployed like you would for any other Django project.
 

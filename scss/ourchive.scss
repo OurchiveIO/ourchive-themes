@@ -207,6 +207,10 @@ $utilities: map-merge(
     border-radius: 0;
 }
 
+.choices__list .choices__item--choice {
+    color: $dark !important;
+}
+
 .chive-rich-text {
     position: relative;
     overflow: hidden;
